@@ -2,7 +2,7 @@
 
 This is an implementation of the open source ArangoDB's benchmark using Starcounter 3.0.
 
-- [NoSQL Performance Benchmark 2018 – MongoDB, PostgreSQL, OrientDB, Neo4j and ArangoDB](https://www.arangodb.com/2018/02/nosql-performance-benchmark-2018-mongodb-postgresql-orientdb-neo4j-arangodb/).
+- [NoSQL Performance Benchmark 2018 â€“ MongoDB, PostgreSQL, OrientDB, Neo4j and ArangoDB](https://www.arangodb.com/2018/02/nosql-performance-benchmark-2018-mongodb-postgresql-orientdb-neo4j-arangodb/).
 
 ## Setup
 
@@ -47,4 +47,4 @@ Use [ArangoDB NodeJs benchmarking suite](https://github.com/weinberger/nosql-tes
 Starcounter REST API NodeJs implementation is available in the [`scripts/description.js`](scripts/description.js) file.
 There is also an `sh` script to perform all the benchmarks using ArangoDB's [NodeJs benchmarker](https://github.com/weinberger/nosql-tests/blob/master/benchmark.js) - [scripts/](benchmark-starcounter.sh).
 
-*Note: NodeJs consumes a lot of RAM when performing multiple parallel HTTP requirests, it might be required to manually increase available amount of RAM for the NodeJs process.*
+*Note: NodeJs consumes a lot of RAM when performing multiple parallel HTTP requests, it might be required to manually increase available amount of RAM for the NodeJs process.*
