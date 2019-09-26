@@ -1,0 +1,20 @@
+﻿{
+  "profiles": {
+    "Starcounter.MultiModelBenchmark | Development": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "http://*:8080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Starcounter.MultiModelBenchmark | Production": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "http://*:8080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    }
+  }
+}

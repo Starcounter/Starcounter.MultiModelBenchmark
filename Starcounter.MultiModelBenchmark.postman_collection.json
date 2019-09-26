@@ -1,0 +1,482 @@
+{
+  "info": {
+    "_postman_id": "6f5e4867-dd19-498b-adc5-5b08f7c6c8b2",
+    "name": "Starcounter.MultiModelBenchmark",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Benchmark",
+      "item": [
+        {
+          "name": "Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/starcounter-mmb/benchmark/status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "starcounter-mmb",
+                "benchmark",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Run All",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/starcounter-mmb/benchmark/All/28",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "starcounter-mmb",
+                "benchmark",
+                "All",
+                "28"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SingleRead",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/starcounter-mmb/benchmark/SingleRead/28",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "starcounter-mmb",
+                "benchmark",
+                "SingleRead",
+                "28"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SingleWrite",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/starcounter-mmb/benchmark/SingleWrite/28",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "starcounter-mmb",
+                "benchmark",
+                "SingleWrite",
+                "28"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SingleWriteSync",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/starcounter-mmb/benchmark/SingleWriteSync/28",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "starcounter-mmb",
+                "benchmark",
+                "SingleWriteSync",
+                "28"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Indexes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/create-indexes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "create-indexes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Import Profiles",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/import-profiles//path/to/soc-pokec-profiles.txt",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "import-profiles",
+            "",
+            "path",
+            "to",
+            "soc-pokec-profiles.txt"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Import Relations",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/import-relations//path/to/soc-pokec-relationships.txt",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "import-relations",
+            "",
+            "path",
+            "to",
+            "soc-pokec-relationships.txt"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Export",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/export/10000//path/to/export",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "export",
+            "10000",
+            "",
+            "path",
+            "to",
+            "export"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Version",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/get-version",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "get-version"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Load Relations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/load-relations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "load-relations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Document",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/get-document/1001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "get-document",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Save Document",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"_key\": 1001,\n    \"public\": 1,\n    \"completion_percentage\": 14,\n    \"gender\": 1,\n    \"region\": \"zilinsky kraj, cadca\",\n    \"last_login\": \"2012-05-21T15:22:00\",\n    \"registration\": \"2007-01-08T00:00:00\",\n    \"age\": 21,\n    \"body\": null,\n    \"i_am_working_in_field\": null,\n    \"spoken_languages\": null,\n    \"hobbies\": null,\n    \"i_most_enjoy_good_food\": null,\n    \"pets\": null,\n    \"body_type\": null,\n    \"my_eyesight\": null,\n    \"eye_color\": null,\n    \"hair_color\": null,\n    \"hair_type\": null,\n    \"completed_level_of_education\": null,\n    \"favourite_color\": null,\n    \"relation_to_smoking\": null,\n    \"relation_to_alcohol\": null,\n    \"sign_in_zodiac\": null,\n    \"on_pokec_i_am_looking_for\": null,\n    \"love_is_for_me\": null,\n    \"relation_to_casual_sex\": null,\n    \"my_partner_should_be\": null,\n    \"marital_status\": null,\n    \"children\": null,\n    \"relation_to_children\": null,\n    \"i_like_movies\": null,\n    \"i_like_watching_movie\": null,\n    \"i_like_music\": null,\n    \"i_mostly_like_listening_to_music\": null,\n    \"the_idea_of_good_evening\": null,\n    \"i_like_specialities_from_kitchen\": null,\n    \"fun\": null,\n    \"i_am_going_to_concerts\": null,\n    \"my_active_sports\": null,\n    \"my_passive_sports\": null,\n    \"profession\": null,\n    \"i_like_books\": null,\n    \"life_style\": null,\n    \"music\": null,\n    \"cars\": null,\n    \"politics\": null,\n    \"relationships\": null,\n    \"art_culture\": null,\n    \"hobbies_interestes\": null,\n    \"science_technologies\": null,\n    \"computers_internet\": null,\n    \"education\": null,\n    \"sports\": null,\n    \"movies\": \"<div> <a title=\\\"vstup do klubu\\\" href=\\\"/klub/icarly-com-1\\\">icarly.com</a> </div>\",\n    \"travelling\": null,\n    \"health\": null,\n    \"companies_brands\": null,\n    \"more\": null\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/save-document",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "save-document"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Aggregate",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/aggregate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "aggregate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Neighbors",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/neighbors/1001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "neighbors",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Neighbors 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/neighbors-2/1001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "neighbors-2",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Neighbors 2 Data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/neighbors-2-data/1001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "neighbors-2-data",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Neighbors 3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/neighbors-3/1001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "neighbors-3",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Shortest Path",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/shortest-path-p/P1202832/P1518761",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "shortest-path-p",
+            "P1202832",
+            "P1518761"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Shortest Path With Steps",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/starcounter-mmb/description/shortest-path-with-steps/1202832/1518761",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "starcounter-mmb",
+            "description",
+            "shortest-path-with-steps",
+            "1202832",
+            "1518761"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
