@@ -6,7 +6,7 @@ This is an implementation of the open source ArangoDB's benchmark using Starcoun
 
 ## Setup
 
-`Starcounter.MultiModelBenchmark` requires Starcounter 3.0, which is in preview stage as of 2019.09.26.
+`Starcounter.MultiModelBenchmark` requires [Starcounter 3.0 Alpha-20190930](https://docs.starcounter.io/v/3.0.0-alpha-20190930/).
 
 - Clone the `Starcounter.MultiModelBenchmark` repository.
 - Create `artifacts` folder on the same level as `Starcounter.MultiModelBenchmark` folder.
