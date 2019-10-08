@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Starcounter.Nova;
 using Starcounter.Nova.Hosting;
@@ -13,11 +14,13 @@ namespace Starcounter.MultiModelBenchmark.Controllers
     {
         private readonly ITransactor transactor;
         private readonly IDdlExecutor ddlExecutor;
+        private readonly IHostApplicationLifetime appLifetime;
 
-        public HomeController(ITransactor transactor, IDdlExecutor ddlExecutor)
+        public HomeController(ITransactor transactor, IDdlExecutor ddlExecutor, IHostApplicationLifetime appLifetime)
         {
             this.transactor = transactor;
             this.ddlExecutor = ddlExecutor;
+            this.appLifetime = appLifetime;
         }
 
         public string Index()
@@ -97,6 +100,12 @@ namespace Starcounter.MultiModelBenchmark.Controllers
             this.ddlExecutor.Execute("CREATE INDEX IX_Starcounter_MultiModelBenchmark_Relation_To ON Starcounter.MultiModelBenchmark.Relation (To)");
 
             return "Database Indexes have been successfully created.";
+        }
+
+        [HttpPost("/starcounter-mmb/shut-down")]
+        public void ShutDown()
+        {
+            this.appLifetime.StopApplication();
         }
     }
 }
